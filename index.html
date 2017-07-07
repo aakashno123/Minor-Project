@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Welcome</title>
+<style>
+body{
+background-image:url("images/e.jpg");
+}
+
+ul {
+	position:fixed;
+	top:0;
+	width:100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+	font-size: 22px;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-ms-transition-duration: 0.4s;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#login{
+padding-left:10%;
+}
+
+#student{
+
+
+}
+
+#student ,#teacher{
+	
+	float:left;
+	width:40%;
+}
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+img{
+
+-moz-transform: scale(0.6);
+	-moz-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transform: scale(0.6);
+	
+	-ms-transform: scale(0.6);
+	-ms-transition-duration: 0.5s;
+}
+
+img:hover{
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	-moz-transform: scale(0.8);
+	-moz-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transform: scale(0.8);
+	
+	-ms-transform: scale(0.8);
+	-ms-transition-duration: 0.5s;
+}
+h1{
+padding-top:5%;
+color:#1d0d96;
+}
+
+</style>
+</head>
+<body>
+<div id="HEADER">
+<ul>
+  <li><a href="wel.html">Home</a></li>
+  <li><a href="http://csvtu.ac.in/ew/">CSVTU</a></li>
+  <li><a href="http://www.gecraipur.ac.in/">GEC Raipur</a></li>
+  <li><a href="reg.html">Registration</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+</div>
+<h1 align="center">Answer Sheet Viewer</h1>
+<div id="login" align="center">
+
+<div id="student">
+<a href="login.html"><img src="images/student.png"/></a> <br>
+<button class="button" onclick="location.href='login.html';"><label> Student</label> </button> 
+
+</div>
+<div id="teacher">
+
+<a href="login.html"><img src="images/teacher.png"/></a><br>
+<button class="button" onclick="location.href='login.html';"><label> Teachers</label>  </button>
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
